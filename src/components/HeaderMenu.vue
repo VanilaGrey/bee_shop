@@ -1,19 +1,19 @@
 <script setup>
-import { clickOutside as vClickOutside } from "v-click-outside-vue3";
-import { ref } from "vue";
+import { clickOutside as vClickOutside } from 'v-click-outside-vue3';
+import { ref } from 'vue';
 
 const menuItems = [
-	{ url: "#!", title: "Каталог" },
-	{ url: "#!", title: "Акции" },
-	{ url: "#!", title: "Отзывы" },
-	{ url: "#!", title: "Доставка и оплата" },
+	{ url: '#!', title: 'Каталог' },
+	{ url: '#!', title: 'Акции' },
+	{ url: '#!', title: 'Отзывы' },
+	{ url: '#!', title: 'Доставка и оплата' },
 	{
-		url: "#!",
-		title: "О компании",
+		url: '#!',
+		title: 'О компании',
 		subitems: [
-			{ url: "#!", title: "О нас" },
-			{ url: "#!", title: "Контакты" },
-			{ url: "#!", title: "Документы" },
+			{ url: '#!', title: 'О нас' },
+			{ url: '#!', title: 'Контакты' },
+			{ url: '#!', title: 'Документы' },
 		],
 	},
 ];
