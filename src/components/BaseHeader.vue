@@ -10,7 +10,9 @@ import MenuItem from './HeaderMenu.vue';
 		<div class="header__inner container">
 			<Logo />
 			<div class="header__container">
-				<p class="header__text">8-(000)-000-00-00 МСК (9-21)</p>
+				<a class="header__text" href="tel:+70000000000"
+					>8(000) 000 00 00 МСК (9-21)</a
+				>
 				<div class="header__input">
 					<UInput
 						class="header__input--controll"
@@ -64,7 +66,7 @@ import MenuItem from './HeaderMenu.vue';
 	grid-template-columns: 330px 1fr;
 	padding-top: 42px;
 	padding-bottom: 23px;
-	gap: 95px;
+	gap: 105px;
 }
 
 .header__container {

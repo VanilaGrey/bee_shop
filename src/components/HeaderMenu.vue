@@ -1,22 +1,8 @@
 <script setup>
 import { clickOutside as vClickOutside } from 'v-click-outside-vue3';
 import { ref } from 'vue';
+import menuItems from '@/data/menu-items.js';
 
-const menuItems = [
-	{ url: '#!', title: 'Каталог' },
-	{ url: '#!', title: 'Акции' },
-	{ url: '#!', title: 'Отзывы' },
-	{ url: '#!', title: 'Доставка и оплата' },
-	{
-		url: '#!',
-		title: 'О компании',
-		subitems: [
-			{ url: '#!', title: 'О нас' },
-			{ url: '#!', title: 'Контакты' },
-			{ url: '#!', title: 'Документы' },
-		],
-	},
-];
 const categoryIndex = ref(-1);
 
 const setCategoryIndex = (index = -1) => {
@@ -67,31 +53,26 @@ const setCategoryIndex = (index = -1) => {
 }
 
 .menu__item {
-	padding: 22px 20px 21px 29px;
+	padding: 22px 20px 21px 15px;
 	cursor: pointer;
 
 	&:hover {
 		background-color: #f2b236;
 		box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 	}
-}
 
-.menu__item:nth-child(1) {
-	padding-left: 15px;
-}
-
-.menu__item:nth-child(2) {
-	padding-left: 15px;
-}
-
-.menu__item:nth-child(3) {
-	padding-left: 15px;
+	&:active {
+		opacity: 0.8;
+	}
 }
 
 .menu__item:nth-child(4) {
 	margin-left: 15px;
 }
 
+.menu__item:nth-child(5) {
+	padding-left: 29px;
+}
 .menu__link {
 	font-weight: 400;
 	font-size: 16px;

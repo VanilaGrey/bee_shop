@@ -32,9 +32,10 @@ defineProps({
 	background-color: white;
 	border: none;
 	border-radius: 12px;
+	cursor: pointer;
 
 	&::after {
-		content: '';
+		content: "";
 		display: block;
 		mask: var(--icon);
 		mask-repeat: no-repeat;
@@ -42,6 +43,15 @@ defineProps({
 		height: 37px;
 		mask-size: 100%;
 		background-color: #f2b236;
+	}
+
+	&:hover {
+		box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.17);
+		margin-bottom: 2px;
+	}
+
+	&:active {
+		opacity: 0.8;
 	}
 }
 
