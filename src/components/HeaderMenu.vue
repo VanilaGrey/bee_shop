@@ -67,12 +67,13 @@ const setCategoryIndex = (index = -1) => {
 }
 
 .menu__item:nth-child(4) {
-	margin-left: 15px;
+	margin-left: 29px;
 }
 
 .menu__item:nth-child(5) {
 	padding-left: 29px;
 }
+
 .menu__link {
 	font-weight: 400;
 	font-size: 16px;

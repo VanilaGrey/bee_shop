@@ -8,6 +8,10 @@ defineProps({
 		type: String,
 		required: true,
 	},
+	size: {
+		type: String,
+		default: 'medium',
+	},
 });
 </script>
 
@@ -15,6 +19,7 @@ defineProps({
 	<button
 		class="social"
 		type="button"
+		:class="`social--${size}`"
 		:style="{ '--icon': `var(--icon-${icon})` }"
 	>
 		<span v-if="$slots.default" class="visually-hidden">
@@ -26,18 +31,15 @@ defineProps({
 <style scoped lang="scss">
 .social {
 	position: relative;
-	width: 37px;
-	height: 37px;
-	background-color: white;
+	padding: 4px;
+	background-color: #90c1bf;
 	border: none;
 	border-radius: 12px;
 	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.17);
-	background-color: #90c1bf;
-	padding: 4px;
 	cursor: pointer;
 
 	&:not(:first-child) {
-		margin-left: 17px;
+		margin-left: 22px;
 	}
 
 	&:hover {
@@ -49,15 +51,42 @@ defineProps({
 	}
 
 	&::after {
-		content: "";
+		content: '';
 		display: block;
 		mask: var(--icon);
 		mask-repeat: no-repeat;
-		width: 29px;
-		height: 29px;
-		mask-size: 100%;
 		background-color: #ffffff;
 		mask-position: 50% 50%;
+	}
+
+	&--small {
+		width: 25px;
+		height: 25px;
+
+		&::after {
+			width: 20px;
+			height: 20px;
+		}
+	}
+
+	&--medium {
+		width: 37px;
+		height: 37px;
+
+		&::after {
+			width: 29px;
+			height: 29px;
+		}
+	}
+
+	&--large {
+		width: 50px;
+		height: 50px;
+
+		&::after {
+			width: 40px;
+			height: 40px;
+		}
 	}
 }
 </style>

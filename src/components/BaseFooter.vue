@@ -11,8 +11,9 @@ import FooterLinks from './FooterLinks.vue';
 			<div class="footer__top">
 				<div>
 					<logo class="footer__logo" />
-					<a class="footer__contacts" href="tel:+70000000000"
-						>8(000) 000 00 00 МСК (9-21)</a
+					<span class="footer__contacts">
+					<a href="tel:+70000000000">8(000) 000 00 00 </a
+					>МСК (9-21)</span
 					><br />
 					<a class="footer__contacts" href="mailto:pchelkashop.ru@mail.ru"
 						>pchelkashop.ru@mail.ru</a
@@ -37,9 +38,9 @@ import FooterLinks from './FooterLinks.vue';
 <style scoped lang="scss">
 .footer {
 	z-index: 1;
-	background: linear-gradient(167deg, #f2b236 0%, #ff9c1a 100%);
 	padding-top: 58px;
 	padding-bottom: 70px;
+	background: linear-gradient(167deg, #f2b236 0%, #ff9c1a 100%);
 }
 
 .footer__inner {
@@ -47,22 +48,23 @@ import FooterLinks from './FooterLinks.vue';
 	grid-template-columns: 290px 1fr;
 	gap: 299px;
 }
+
 .footer__top {
 	margin-left: 24px;
 }
 
 .footer__logo {
-	margin: 0;
 	width: 265px;
+	margin: 0;
 	margin-bottom: 15px;
 }
 
 .footer__contacts {
+	margin: 0;
+	padding: 0;
 	font-weight: 500;
 	font-size: 18px;
 	color: #884900;
-	margin: 0;
-	padding: 0;
 }
 
 .footer__input {
@@ -71,7 +73,7 @@ import FooterLinks from './FooterLinks.vue';
 	margin-top: 41px;
 
 	&::before {
-		content: "";
+		content: '';
 		position: absolute;
 		top: 13px;
 		right: 16px;
@@ -87,9 +89,9 @@ import FooterLinks from './FooterLinks.vue';
 	}
 
 	&--controll {
-		border-radius: 26px;
 		font-weight: 400;
 		font-size: 16px;
+		border-radius: 26px;
 	}
 }
 </style>

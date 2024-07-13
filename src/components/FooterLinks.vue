@@ -25,10 +25,10 @@ import SocialLinks from './SocialLinks.vue';
 			</li>
 		</ul>
 		<div class="nav__social">
-			<SocialLinks icon="inst" url="#!">Инстаграмм</SocialLinks>
-			<SocialLinks icon="whatsapp" url="#!">Whatsapp</SocialLinks>
-			<SocialLinks icon="call" url="#!">Звонок</SocialLinks>
-			<SocialLinks icon="telegram" url="#!">Телеграм</SocialLinks>
+			<SocialLinks icon="inst" url="#!" size="medium">Инстаграмм</SocialLinks>
+			<SocialLinks icon="whatsapp" url="#!" size="medium">Whatsapp</SocialLinks>
+			<SocialLinks icon="call" url="#!" size="medium">Звонок</SocialLinks>
+			<SocialLinks icon="telegram" url="#!" size="medium">Телеграм</SocialLinks>
 		</div>
 	</div>
 </template>
@@ -37,8 +37,8 @@ import SocialLinks from './SocialLinks.vue';
 .nav {
 	position: relative;
 	display: grid;
-    grid-template-columns: 170px 157px 200px;
-    gap: 42px;
+	grid-template-columns: 170px 157px 200px;
+	gap: 42px;
 }
 
 .nav__list {

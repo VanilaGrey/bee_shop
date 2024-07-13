@@ -13,10 +13,10 @@
 <style scoped lang="scss">
 .privacy {
 	display: flex;
-	background-color: #222528;
-	color: #ced0d2;
 	padding-top: 56px;
-    padding-bottom: 56px;
+	padding-bottom: 56px;
+	color: #ced0d2;
+	background-color: #222528;
 }
 
 .privacy__inner {
